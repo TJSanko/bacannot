@@ -13,7 +13,7 @@ process PHIGARO {
   output:
   tuple val(prefix), path("${prefix}_phigaro.tsv") , emit: tsv
   tuple val(prefix), path("${prefix}_phigaro.bed") , emit: bed
-  tuple val(prefix), path("${prefix}_phigaro.html"), emit: html optional true
+  tuple val(prefix), path("${prefix}_phigaro.html"), emit: html, optional: true
   tuple val(prefix), path("*")                     , emit: all
   path('phigaro_version.txt')                      , emit: version
 
