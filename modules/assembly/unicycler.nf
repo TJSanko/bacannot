@@ -71,6 +71,8 @@ process UNICYCLER {
     $paired_param \\
     $unpaired_param \\
     $lr_param \\
+    --keep 0 \\
+    --kmers 107,111,127 \\
     -o unicycler_${prefix} \\
     -t $task.cpus &> unicycler.log
 
